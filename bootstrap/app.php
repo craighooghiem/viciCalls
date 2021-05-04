@@ -1,5 +1,6 @@
 <?php
 
+require_once '/etc/freepbx.conf';
 require_once __DIR__.'/../vendor/autoload.php';
 
 (new Laravel\Lumen\Bootstrap\LoadEnvironmentVariables(
@@ -23,7 +24,7 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
-// $app->withFacades();
+$app->withFacades();
 
 // $app->withEloquent();
 
